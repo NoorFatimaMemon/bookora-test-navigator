@@ -3,26 +3,7 @@
 A secure automation tool built with **SeleniumBase** and an undetected Chrome driver. It monitors the driving test booking system and sends real-time **WhatsApp alerts** when user input is required (e.g., CAPTCHA solving or manual confirmation).
 
 ## Project Structure
-
-bookora_test_navigator/
-├── main.py                      - Entry point to launch the bot
-├── main.bat                     - One-click launcher for Windows
-├── setup.bat                    - Installs Python & dependencies automatically
-├── bot/
-│   └── automation_engine.py     - Core automation logic
-├── TextMagic/
-│   └── notifier.py              - WhatsApp integration
-├── utils/
-│   ├── selenium_utils.py        - Scrolling, clicking, screenshots, etc.
-│   ├── config_loader.py         - Loads settings from .env
-│   ├── logger.py                - Logging setup
-│   ├── driver_utils.py          - Initializes undetected Chrome driver
-│   └── notification_utils.py    - Loads and sends notifications
-├── config/
-│   ├── .env                     - Environment variables (editable)
-│   └── recipients.txt           - List of WhatsApp recipients
-├── requirements.txt             - Python dependencies
-├── README.md                    - Project documentation
+<img width="569" height="397" alt="image" src="https://github.com/user-attachments/assets/a0183abe-b59f-4e1f-9613-7621359b596a" />
 
 ## Setup Instructions
 ### 1. Run Setup

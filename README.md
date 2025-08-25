@@ -9,7 +9,7 @@ A secure automation tool built with **SeleniumBase** and an undetected Chrome dr
 ### 1. Run Setup
 * **Action:** Double-click `setup.bat`
 * **Result:**
-  * Creates a virtual environment (if needed)
+  * Install Python (if not installed already)
   * Installs dependencies from `requirements.txt`
 
 ### 2. Configure Environment
@@ -24,7 +24,7 @@ DISABILITY=No
 TEXTMAGIC_USERNAME=your_textmagic_user
 TEXTMAGIC_API_KEY=your_textmagic_api_key
 ```
-Add WhatsApp recipients in `config/recipients.txt` (one per line).
+Add WhatsApp recipients in `config/recipients.txt` (comma separated).
 
 ## Running Bookora Test Navigator
 **Windows (Auto-Launch):**
@@ -35,12 +35,12 @@ python main.py
 ```
 ## 🔄 Bot Workflow
 1. **Launch:** Opens browser and navigates to driving test login page.
-2. **CAPTCHA Detection:** Pauses if CAPTCHA is detected → sends WhatsApp alert.
+2. **CAPTCHA Detection:** Pauses if CAPTCHA is dete.cted → sends WhatsApp alert.
 3. **Login Screen Detection:** Sends WhatsApp alert when login screen appears.
 4. **Autologin:** Uses `.env` credentials to log in automatically.
 5. **Form Autofill:** Fills form with booking values from `.env`.
 6. **Slot Scanning:** Continuously scans for available green slots.
-7. **Slot Found:** Clicks the slot, sends WhatsApp alert → waits for manual confirmation.
+7. **Slot Found:** Clicks the slot, sends WhatsApp alert → waits for confirmation.
 
 ## WhatsApp Alerts
 * **CAPTCHA detected:** "CAPTCHA detected. Please complete it to continue."
@@ -64,4 +64,4 @@ Logs are stored at: `logs/YYYY-MM-DD.log`
 5. Booking form auto-filled.
 6. Bot scans for slots → refreshes until found.
 7. Green slot found → bot clicks slot → WhatsApp alert sent.
-8. Confirm booking manually.
+8. Confirm booking.

@@ -34,7 +34,7 @@ Double-click `main.bat`
 python main.py
 ```
 ## 🔄 Bot Workflow
-1. **Launch:** Opens browser and navigates to UK driving test login page.
+1. **Launch:** Opens browser and navigates to driving test login page.
 2. **CAPTCHA Detection:** Pauses if CAPTCHA is detected → sends WhatsApp alert.
 3. **Login Screen Detection:** Sends WhatsApp alert when login screen appears.
 4. **Autologin:** Uses `.env` credentials to log in automatically.
